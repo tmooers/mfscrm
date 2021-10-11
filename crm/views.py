@@ -125,7 +125,7 @@ def product_edit(request, pk):
     else:
         # print("else")
         form = ProductForm(instance=product)
-    return render(request, 'crm/service_edit.html', {'form': form})
+    return render(request, 'crm/product_edit.html', {'form': form})
 
 
 @login_required
